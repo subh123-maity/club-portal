@@ -145,7 +145,7 @@ footer
 }
 .logo img 
 {
-	padding-left: 80px;
+	padding-left: 10px;
 }
 
 li a
@@ -167,10 +167,10 @@ nav li
 
 section .sec_img
 {
-	height: 510px;
-	width:1517px;
+	height:550px;
+	width:1700px;
 	margin-top: 0px;
-	background-image: url("glacampus.jpg");
+	background-image: url("campus12.jpg");
 	
 }
 
@@ -183,6 +183,7 @@ section .sec_img
 	margin: 70px auto;
 	opacity: .9;
 	color: black;
+  font-size: larger;
 } 
 
 /*--------------------------------st_login,admin_login-----------------------------*/

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leave Form</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      label, select, input[type="date"], textarea, input[type="file"], input[type="submit"] {
+        margin: 10px;
+        width: 300px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+      }
+      
+      label {
+        font-weight: bold;
+      }
+      
+      select {
+        cursor: pointer;
+      }
+      
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="category">Leave Category:</label>
+      <select id="category" name="category">
+        <option value="sick">Sick Leave</option>
+        <option value="vacation">Vacation Leave</option>
+        <option value="personal">Personal Leave</option>
+      </select>
+      
+      <label for="type">Leave Type:</label>
+      <select id="type" name="type">
+        <option value="full-day">Full Day</option>
+        <option value="half-day-am">Half Day - Morning</option>
+        <option value="half-day-pm">Half Day - Afternoon</option>
+      </select>
+      
+      <label for="start-date">Starting Date:</label>
+      <input type="date" id="start-date" name="start-date">
+      
+      <label for="end-date">Ending Date:</label>
+      <input type="date" id="end-date" name="end-date">
+      
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" rows="5"></textarea>
+      
+      <label for="file-upload">File to Upload:</label>
+      <input type="file" id="file-upload" name="file-upload">
+      
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
